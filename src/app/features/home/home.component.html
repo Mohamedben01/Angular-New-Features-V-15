@@ -1,0 +1,7 @@
+<!-- <p appMouseEffects size="3px">Hello Mohamed !</p> -->
+<div *ngForEmpty="let person of persons; else: emptyList">
+    {{ person }}
+</div>
+<ng-template #emptyList>The list is empty !!</ng-template>
+<button (click)="clear()">Clear</button>
+<button (click)="add()">Add</button>
